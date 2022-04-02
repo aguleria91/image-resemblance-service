@@ -1,0 +1,19 @@
+{
+  "name": "image-resemblance-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aguleria91/image-resemblance-service.git"
+  },
+  "author": "Aditya Guleria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aguleria91/image-resemblance-service/issues"
+  },
+  "homepage": "https://github.com/aguleria91/image-resemblance-service#readme"
+}
