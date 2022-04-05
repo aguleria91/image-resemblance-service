@@ -1,0 +1,26 @@
+[
+  {
+    "image1": "./testing/images/image1.png",
+    "image2": "./testing/images/image2.png",
+    "similar": 0.2,
+    "elapsed": 0.5
+  },
+  {
+    "image1": "./testing/images/image1.png",
+    "image2": "./testing/images/image2.png",
+    "similar": 0.6,
+    "elapsed": 0.5
+  },
+  {
+    "image1": "./testing/images/image1.png",
+    "image2": "./testing/images/image2.png",
+    "similar": 0.2,
+    "elapsed": 0.9
+  },
+  {
+    "image1": "./testing/images/image1.png",
+    "image2": "./testing/images/image2.png",
+    "similar": 0.1,
+    "elapsed": 0.7
+  }
+]

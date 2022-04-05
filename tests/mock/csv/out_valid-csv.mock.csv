@@ -1,0 +1,5 @@
+image1,image2,similar,elapsed
+./testing/images/image1.png,./testing/images/image2.png,0.2,0.5
+./testing/images/image1.png,./testing/images/image2.png,0.6,0.5
+./testing/images/image1.png,./testing/images/image2.png,0.2,0.9
+./testing/images/image1.png,./testing/images/image2.png,0.1,0.7

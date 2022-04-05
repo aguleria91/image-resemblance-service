@@ -1,0 +1,22 @@
+[
+  {
+    "image1": "./testing/images/image1.png",
+    "image2": "./testing/images/image2.png"
+  },
+  {
+    "image1": "./testing/images/image1.png",
+    "image2": "./testing/images/image2.png",
+    "similar": 0.6
+  },
+  {
+    "image1": "./testing/images/image1.png",
+    "image2": "./testing/images/image2.png",
+    "similar": 0.2,
+    "elapsed": 0.9
+  },
+  {
+    "image1": "./testing/images/image1.png",
+    "image2": "./testing/images/image2.png",
+    "elapsed": 0.7
+  }
+]
