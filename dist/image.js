@@ -22,8 +22,11 @@ exports.getCsvOutput = getCsvOutput;
  * @returns
  */
 async function readImage(firstImagePath, secondImagePath) {
-    if (!fs_1.default.existsSync(firstImagePath) || !fs_1.default.existsSync(secondImagePath)) {
-        throw new Error("Images do not exist in the given path.");
+    if (!fs_1.default.existsSync(firstImagePath)) {
+        throw new Error(`Images do not exist in the given path.${firstImagePath}`);
+    }
+    if (!fs_1.default.existsSync(secondImagePath)) {
+        throw new Error(`Images do not exist in the given path.${secondImagePath}`);
     }
     const [firstImageData, secondImageData] = await Promise.all([
         fs_1.default.readFileSync(firstImagePath),

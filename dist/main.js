@@ -24,6 +24,6 @@ async function main() {
     if (!writeSuccess) {
         throw new Error("Could not write the csv file.");
     }
-    console.log("Your CSV file has been successfully written to " + newPath);
+    console.log("Your Image Resemblence score has been written to " + newPath);
 }
 main();

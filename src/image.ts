@@ -14,6 +14,11 @@ interface ReadImageOutput {
   secondImageData: Buffer;
 }
 
+/**
+ * 
+ * @param csvData 
+ * @returns 
+ */
 export async function getCsvOutput(csvData: InputCsvData[]) {
   let promises = [];
 
@@ -34,8 +39,11 @@ export async function getCsvOutput(csvData: InputCsvData[]) {
  */
 export async function readImage(firstImagePath: string, secondImagePath: string): Promise<ReadImageOutput> {
 
-  if (!fs.existsSync(firstImagePath) || !fs.existsSync(secondImagePath)) {
-    throw new Error("Images do not exist in the given path.");
+  if (!fs.existsSync(firstImagePath)) {
+    throw new Error(`Images do not exist in the given path.${firstImagePath}`);
+  }
+  if (!fs.existsSync(secondImagePath)) {
+    throw new Error(`Images do not exist in the given path.${secondImagePath}`);
   }
 
   const [firstImageData, secondImageData] = await Promise.all([
@@ -51,7 +59,7 @@ export async function readImage(firstImagePath: string, secondImagePath: string)
  * @param firstImagePath 
  * @param secondImagePath 
  * @param index 
- * @returns DiffOutput
+ * @returns 
  */
 export async function diffImage(firstImagePath: string, secondImagePath: string, index: number): Promise<DiffOutput> {
   const options = {

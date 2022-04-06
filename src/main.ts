@@ -13,18 +13,18 @@ async function main() {
   // Pass file path to csv reader and get the images paths
   const csvData = await readCsv(filePath);
 
-  // Convert the images to a standard format and size
+  // Compare the images to get the csv data
   const csvWriteData = await getCsvOutput(csvData)
-  // Compare the images to get a John score
 
   // Write the a csv file with the pair of images and their score
   const { writeSuccess, newPath } = await writeCsv(csvWriteData, filePath);
 
-  // Write the a csv file with the pair of images and their score
+  // Check Write success of the csv file
   if (!writeSuccess) {
     throw new Error("Could not write the csv file.")
   }
-  console.log("Your CSV file has been successfully written to " + newPath)
+
+  console.log("Your Image Resemblence score has been written to " + newPath)
 
 }
 
