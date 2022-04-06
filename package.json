@@ -1,7 +1,7 @@
 {
   "name": "image-resemblance-service",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is service is built with 💕 to help John automate his tedios manual work of comparing the visual appearance of two images and then giving the pair of images a **John score**.",
   "main": "index.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
