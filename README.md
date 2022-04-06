@@ -53,4 +53,4 @@ This project uses multiple 3rd Party packages -
 
 ### Testing
 
-Run `npm test` to run test cases.
+Run `npm run test` to run test cases.
