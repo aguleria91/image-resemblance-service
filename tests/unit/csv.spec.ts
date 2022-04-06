@@ -9,7 +9,7 @@ const csvPath = process.cwd() + '/tests/mock/csv/';
 
 describe('CSV Module', () => {
 
-  describe('Read CSV()', () => {
+  describe('Read CSV', () => {
 
     it('should return an error if the file is invalid', (done) => {
       readCsv(csvPath + 'invalid-csv.mock.csv')

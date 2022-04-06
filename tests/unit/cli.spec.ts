@@ -6,13 +6,13 @@ import { afterEach } from "mocha";
 const filePath = './tmp/cli/path-passed/images.csv'
 
 describe("Cli Module", () => {
-  
-  describe("ReadCli()", () => {
+
+  describe("Read Cli", () => {
     let temp: string[] = [];
 
     beforeEach(() => {
       temp = Object.assign([], process.argv);
-      
+
       process.argv = process.argv.slice(0, 2);  // Remove unnecessary arguments included by the test module 
     })
 

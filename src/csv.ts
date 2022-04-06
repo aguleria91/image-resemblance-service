@@ -3,7 +3,7 @@ import { writeToPath } from '@fast-csv/format';
 import * as path from 'path';
 import * as fs from 'fs';
 
-interface InputCsvData {
+export interface InputCsvData {
   image1: string;
   image2: string;
 }
@@ -65,9 +65,11 @@ export function writeCsv(data: OutputCsvData[], path: string) {
   newPath = newPath + '/out_' + filename;
 
   // Writes a CSV to a given path
-  return new Promise((resolve, reject) => {
+  const writeSuccess = new Promise((resolve, reject) => {
     writeToPath(newPath, rows)
       .on('error', () => reject)
       .on('finish', () => resolve(true));
   });
+
+  return { writeSuccess, newPath };
 }
