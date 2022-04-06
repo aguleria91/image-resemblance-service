@@ -35,7 +35,7 @@ This project uses multiple 3rd Party packages -
 2. Navigate to `image-resemblance-service` directory using `cd image-resemblance-service`
 3. Run `npm install` to install dependencies and packages.
 4. Run `npm run build` to build the application.
-5. Run ```node ./dist/main.js "enter you absolute path of your csv file"
+5. Run `node ./dist/main.js` "enter you absolute path of your csv file"
    ```
     Example - node ./dist/main.js "node ./dist/main.js "/home/aguleria/work/examples/image-resemblance-test.csv"
    ```
