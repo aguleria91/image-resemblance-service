@@ -16,9 +16,9 @@ interface OutputCsvData {
 }
 
 /**
- * 
- * @param path 
- * @returns 
+ * Function to readCsv and return parsed data
+ * @param path string
+ * @returns InputCsvData[]
  */
 export async function readCsv(path: string): Promise<InputCsvData[]> {
   return new Promise((resolve, reject) => {
@@ -39,7 +39,7 @@ export async function readCsv(path: string): Promise<InputCsvData[]> {
 }
 
 /**
- * Function which takes data as input and writes it to a csv file
+ * Function which takes data as input and writes it to a new csv file
  * @param data 
  * @param path 
  * @returns 

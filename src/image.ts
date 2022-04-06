@@ -15,7 +15,7 @@ interface ReadImageOutput {
 }
 
 /**
- * 
+ * Function to process image diff using concurency for performance optimization.
  * @param csvData 
  * @returns 
  */
@@ -32,10 +32,10 @@ export async function getCsvOutput(csvData: InputCsvData[]) {
 }
 
 /**
- * 
- * @param firstImagePath 
- * @param secondImagePath 
- * @returns 
+ * Function to read image file from path and return the image data.
+ * @param firstImagePath string
+ * @param secondImagePath string
+ * @returns ReadImageOutput
  */
 export async function readImage(firstImagePath: string, secondImagePath: string): Promise<ReadImageOutput> {
 
